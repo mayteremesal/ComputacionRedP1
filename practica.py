@@ -4,7 +4,7 @@ import urllib2
 from flask import Flask
 app = Flask(__name__)
 
-#código para parar el servidor elegantemente con CTRL C (se puede borrar en versión final)
+#código para parar el servidor elegantemente con CTRL C (se puede borrar en versión final )
 import signal
 import sys
 def signal_handler(signal, frame):
