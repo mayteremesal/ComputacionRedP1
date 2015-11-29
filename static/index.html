@@ -6,8 +6,9 @@
 	<script type="text/javascript">		
 		function consultar () {
 			var numero = document.getElementById('numero');
+			var serie = document.getElementById('serie');
 			var fecha = document.getElementById('fecha');
-			window.location = '/' + fecha.value + '/' + numero.value;
+			window.location = '/' + fecha.value + '/' + numero.value + '/' + serie.value;
 		}
 	</script>
 </head>
@@ -18,13 +19,23 @@
 		<td><input id="numero" type="text" placeholder="98190"></td>
 	</tr>
 	<tr>
+		<td>Serie:</td>
+		<td><input id="serie" type="text" placeholder="007"></td>
+	</tr>
+	<tr>
 		<td>Fecha:</td>
 		<td><input id="fecha" type="text" placeholder="2015-11-13"></td>
 	</tr>
 	<tr>
 		<td></td>
-		<td><button onclick="consultar()">Consultar</button></td>
+		<td><button onclick="consultar()" style="width: 100%">Consultar</button></td>
 	</tr>
+	<!-- PARA PARTE AVANZADA -->
+	<tr>
+		<td></td>
+		<td><button onclick="window.location = '/poblarbasededatos'" style="width: 100%">Poblar Base de Datos</button></td>
+	</tr>
+	<!-- FIN PARA PARTE AVANZADA -->
 </table>
 </body>
 </html>
